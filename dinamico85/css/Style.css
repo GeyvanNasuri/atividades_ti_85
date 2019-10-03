@@ -1,0 +1,216 @@
+@import url('Reset.css');
+/* *{margin: 0;padding: 0;} */
+
+body{
+    font-family: arial;
+    background-color: brown;
+}
+
+/* Estrutura */
+
+#estrutura {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#estrutura #topo{
+    height: 200px;
+    background-image: url(../img/logotitio.png);
+    border-radius: 7px;
+
+}
+
+#estrutura #menu ul {
+    border-radius: 7px;
+    padding:0px;
+    margin:auto;
+    background-color:#EDEDED;
+    list-style:none; font-size: 26px;
+}
+
+#estrutura #menu ul li {
+    display: inline;
+}
+
+#estrutura #menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+    /* visual do link */
+a{
+    background-color:#EDEDED;
+    color: #333;
+    border-bottom:3px solid #EDEDED;
+}
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+#estrutura #banner{
+    height: 200px;background-color: #f3f3f3;
+}
+
+#corpo #esquerda{
+    width:135px;
+    height: 480px;
+    float: left;
+}
+#corpo #centro{
+    width: 690px;
+    height: 480px;
+    float: left;
+}
+#corpo #direita{
+    width: 135px;
+    height: 480px;
+    float: left;
+}
+
+#estrutura #rodape{
+    height: 50px;
+}
+
+#estrutura #rodape{
+    text-align: center;
+}
+
+.espacamento{
+    margin-top: 1%
+}
+
+.social-icons a{
+    font-size: 1.5em;
+    color: darkblue;
+}
+.social-icons a:last-child{
+    margin-right: 0;
+
+}
+.social-icons a:hover{
+    color: blue;
+}
+.copyright{
+    color: darkblue;
+    margin-top: 2%;
+}
+
+/*menu*/
+.esquerda{
+    list-style: none;
+    margin-top: 4px;
+}
+.esquerda li {
+    margin-left: 15px;
+    font-size: 16px;
+}
+.esquerda li a{
+    text-decoration:none;
+}
+.esquerda h1{
+    font-family: cursive;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.centro{
+    margin-top: 4px;
+}
+
+.direita{
+    margin-top: 4px;
+}
+.itens-noticias{
+    margin-top: 3px;
+}
+/* criando banner animado*/
+.banner{
+	width: 950px;
+	height: 600px;
+    border: 5px solid burlywood;
+    border-radius: 7px;
+	margin: auto;
+	margin-top: 2px;
+	margin-left: 0px;
+	background-image:url("../img/cafeteria.jpg");
+	background-size: 100% 100%;
+	animation: banner 10s infinite;
+}
+@keyframes banner{
+	0%, 30%{
+		background-image: url("../img/cafeteria.jpg")
+	}
+	31%, 65%{
+		background-image: url("../img/cafeteria1.jpg")
+	}
+	66%, 100%{
+		background-image: url("../imagens/cafeteria2")
+	}
+}
+
+/* Home.php */
+
+#home p{
+    text-align: center;
+}
+
+/* criar uma div e colocar a classe banner*/
+
+
+
+/*---------Centro - Posters---------------------*/
+
+/*#conteiner-post{width: 568px;height: 400px;}*/
+#conteiner-posts-recentes{
+    width: 465px;
+    height: 360px;
+}
+
+#ultimo-post-lancado{
+    float: left;
+    margin: 5px;
+    height: 323px;
+    padding: 10px;
+    border: solid 1px #ccc;width: 300px;
+}
+
+#ultimo-post-lancado h1{
+ 	color: #666;
+ 	font-size: 12px;
+ 	padding: 5px 0 0 0 ;
+}
+
+#ultimo-post-lancado a{
+      color: #666;
+      text-decoration: none;
+}
+
+#ultimo-post-lancado a:hover{
+    text-decoration:underline;
+}
+
+#ultimo-post-lancado p{
+    color: #000;
+    font-size: 11px;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+/*
+  #caixa-post-recente h3{font-family: Arial, Helvetica, sans-serif;
+                         font-size: 11px;
+                         padding: 3px;}
+
+
+   #caixa-post-recente h3 a{color: #006699;
+                            text-decoration: none;
+                         }                      
+
+#caixa-post-recente h3 a:hover{color: red;
+                            text-decoration: underline;
+                         } 
+          
+  #caixa-post-recente img {float: left;margin-right: 3px;}
+   #caixa-post-recente small{font-size: 10px;}*/
